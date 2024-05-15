@@ -1,0 +1,35 @@
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(90deg, #f2c14e 0%, #d654cf 55%, #979ccb 100%);
+            overflow-x: hidden;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.8);
+            transition: background-color 0.3s ease;
+        }
+        .cell:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .winner {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            color: #fff;
+        }
+button{ border: none; background: #1890ff; color: #FFF; padding: 0.7rem 1rem; border-radius: 0.3rem; cursor: pointer; }
+button:hover{ background:#006ed9; }
